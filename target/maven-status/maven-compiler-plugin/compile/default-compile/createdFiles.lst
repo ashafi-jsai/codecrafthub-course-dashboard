@@ -1,0 +1,5 @@
+net/courses/service/CourseService.class
+net/courses/service/CourseService$1.class
+net/courses/CodeCraftHubApplication.class
+net/courses/model/Course.class
+net/courses/controller/CourseController.class
