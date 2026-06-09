@@ -1,317 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodeCraftHub — Learning Management Platform</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --primary: #8B5CF6;
-    --primary-dark: #6D28D9;
-    --primary-tint: #F1ECFE;
-    --success: #F59E0B;
-    --success-tint: #FEF3E2;
-    --danger: #EF4444;
-    --danger-tint: #FEECEC;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCraftHub: Your Learning Management Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8B5CF6;
+      --primary-dark: #6D28D9;
+      --primary-tint: #F1ECFE;
+      --success: #F59E0B;
+      --success-tint: #FEF3E2;
+      --danger: #EF4444;
+      --danger-tint: #FEECEC;
 
-    --ink: #1E1B2E;
-    --ink-soft: #534F66;
-    --ink-faint: #8B8799;
-    --line: #E7E4F0;
-    --surface: #FFFFFF;
-    --bg: #F7F5FB;
+      --ink: #1E1B2E;
+      --ink-soft: #534F66;
+      --ink-faint: #8B8799;
+      --line: #E7E4F0;
+      --surface: #FFFFFF;
+      --bg: #F7F5FB;
 
-    --status-not: #94A3B8;
-    --status-progress: var(--success);
-    --status-done: #10B981;
+      --status-not: #94A3B8;
+      --status-progress: var(--success);
+      --status-done: #10B981;
 
-    --radius: 14px;
-    --radius-sm: 9px;
-    --shadow: 0 1px 2px rgba(30,27,46,.04), 0 8px 28px rgba(30,27,46,.06);
-    --shadow-lg: 0 12px 48px rgba(30,27,46,.18);
-  }
+      --radius: 14px;
+      --radius-sm: 9px;
+      --shadow: 0 1px 2px rgba(30,27,46,.04), 0 8px 28px rgba(30,27,46,.06);
+      --shadow-lg: 0 12px 48px rgba(30,27,46,.18);
+    }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: var(--ink);
-    background: var(--bg);
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
 
-  .mono { font-family: 'JetBrains Mono', monospace; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
 
-  /* ---------- Header ---------- */
-  header.topbar {
-    background: linear-gradient(120deg, var(--primary-dark), var(--primary));
-    color: #fff;
-    padding: 28px 0 30px;
-  }
-  .wrap { width: min(1080px, 92vw); margin: 0 auto; }
-  .brand { display: flex; align-items: center; gap: 14px; }
-  .brand-mark {
-    width: 46px; height: 46px; flex: none;
-    border-radius: 12px;
-    background: rgba(255,255,255,.16);
-    border: 1px solid rgba(255,255,255,.28);
-    display: grid; place-items: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 500; font-size: 20px;
-    color: #fff;
-  }
-  .brand h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700; font-size: 1.55rem; letter-spacing: -.02em;
-  }
-  .brand p { font-size: .9rem; color: rgba(255,255,255,.78); margin-top: 1px; }
+    /* ---------- Header ---------- */
+    header.topbar {
+      background: linear-gradient(120deg, var(--primary-dark), var(--primary));
+      color: #fff;
+      padding: 28px 0 30px;
+    }
+    .wrap { width: min(1080px, 92vw); margin: 0 auto; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand-mark {
+      width: 46px; height: 46px; flex: none;
+      border-radius: 12px;
+      background: rgba(255,255,255,.16);
+      border: 1px solid rgba(255,255,255,.28);
+      display: grid; place-items: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500; font-size: 20px;
+      color: #fff;
+    }
+    .brand h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700; font-size: 1.55rem; letter-spacing: -.02em;
+    }
+    .brand p { font-size: .9rem; color: rgba(255,255,255,.78); margin-top: 1px; }
 
-  /* ---------- Layout ---------- */
-  main { width: min(1080px, 92vw); margin: -16px auto 64px; }
+    /* ---------- Layout ---------- */
+    main { width: min(1080px, 92vw); margin: -16px auto 64px; }
 
-  .panel {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-  }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
 
-  .panel-head {
-    display: flex; align-items: center; gap: 10px;
-    padding: 18px 22px;
-    border-bottom: 1px solid var(--line);
-  }
-  .panel-head h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.05rem; font-weight: 600; letter-spacing: -.01em;
-  }
-  .panel-head .eyebrow {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: .72rem; color: var(--primary); font-weight: 500;
-    background: var(--primary-tint); padding: 3px 8px; border-radius: 6px;
-  }
+    .panel-head {
+      display: flex; align-items: center; gap: 10px;
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .panel-head h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem; font-weight: 600; letter-spacing: -.01em;
+    }
+    .panel-head .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--primary); font-weight: 500;
+      background: var(--primary-tint); padding: 3px 8px; border-radius: 6px;
+    }
 
-  /* ---------- Form ---------- */
-  form#add-form { padding: 22px; }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px 18px;
-  }
-  .field { display: flex; flex-direction: column; gap: 6px; }
-  .field.full { grid-column: 1 / -1; }
-  label {
-    font-size: .82rem; font-weight: 600; color: var(--ink-soft);
-  }
-  label .req { color: var(--danger); margin-left: 2px; }
+    /* ---------- Form ---------- */
+    form#add-form { padding: 22px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 18px;
+    }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field.full { grid-column: 1 / -1; }
+    label {
+      font-size: .82rem; font-weight: 600; color: var(--ink-soft);
+    }
+    label .req { color: var(--danger); margin-left: 2px; }
 
-  input, textarea, select {
-    font-family: inherit; font-size: .92rem; color: var(--ink);
-    padding: 11px 13px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-sm);
-    background: #fff;
-    transition: border-color .15s, box-shadow .15s;
-    width: 100%;
-  }
-  textarea { resize: vertical; min-height: 78px; }
-  input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px var(--primary-tint);
-  }
-  input.invalid, textarea.invalid, select.invalid {
-    border-color: var(--danger);
-    box-shadow: 0 0 0 3px var(--danger-tint);
-  }
-  .err-text {
-    font-size: .76rem; color: var(--danger); min-height: 0;
-  }
+    input, textarea, select {
+      font-family: inherit; font-size: .92rem; color: var(--ink);
+      padding: 11px 13px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: #fff;
+      transition: border-color .15s, box-shadow .15s;
+      width: 100%;
+    }
+    textarea { resize: vertical; min-height: 78px; }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-tint);
+    }
+    input.invalid, textarea.invalid, select.invalid {
+      border-color: var(--danger);
+      box-shadow: 0 0 0 3px var(--danger-tint);
+    }
+    .err-text {
+      font-size: .76rem; color: var(--danger); min-height: 0;
+    }
 
-  /* ---------- Buttons ---------- */
-  .btn {
-    font-family: inherit; font-weight: 600; font-size: .9rem;
-    border: 1px solid transparent; border-radius: var(--radius-sm);
-    padding: 11px 20px; cursor: pointer;
-    display: inline-flex; align-items: center; gap: 8px;
-    transition: transform .08s, filter .15s, background .15s, color .15s;
-    white-space: nowrap;
-  }
-  .btn:active { transform: translateY(1px); }
-  .btn:disabled { opacity: .55; cursor: not-allowed; }
-  .btn-primary { background: var(--primary); color: #fff; }
-  .btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
-  .btn-ghost { background: #fff; border-color: var(--line); color: var(--ink-soft); }
-  .btn-ghost:hover:not(:disabled) { border-color: var(--primary); color: var(--primary); }
-  .btn-danger { background: var(--danger-tint); color: var(--danger); border-color: transparent; }
-  .btn-danger:hover:not(:disabled) { background: var(--danger); color: #fff; }
-  .btn-edit { background: var(--success-tint); color: #B45309; }
-  .btn-edit:hover:not(:disabled) { background: var(--success); color: #fff; }
-  .btn-sm { padding: 8px 14px; font-size: .82rem; }
+    /* ---------- Buttons ---------- */
+    .btn {
+      font-family: inherit; font-weight: 600; font-size: .9rem;
+      border: 1px solid transparent; border-radius: var(--radius-sm);
+      padding: 11px 20px; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: transform .08s, filter .15s, background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn:disabled { opacity: .55; cursor: not-allowed; }
+    .btn-primary { background: #8B5CF6; color: #fff; }
+    .btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
+    .btn-ghost { background: #fff; border-color: var(--line); color: var(--ink-soft); }
+    .btn-ghost:hover:not(:disabled) { border-color: var(--primary); color: var(--primary); }
+    .btn-danger { background: var(--danger-tint); color: var(--danger); border-color: transparent; }
+    .btn-danger:hover:not(:disabled) { background: var(--danger); color: #fff; }
+    .btn-success { background: #F59E0B; color: #fff; }
+    .btn-success:hover:not(:disabled) { filter: brightness(.95); }
+    .btn-sm { padding: 8px 14px; font-size: .82rem; }
 
-  .form-actions {
-    grid-column: 1 / -1;
-    display: flex; gap: 10px; justify-content: flex-end;
-    padding-top: 4px;
-  }
+    .form-actions {
+      grid-column: 1 / -1;
+      display: flex; gap: 10px; justify-content: flex-end;
+      padding-top: 4px;
+    }
 
-  /* ---------- Toolbar ---------- */
-  .toolbar {
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 12px;
-    margin: 28px 0 16px;
-  }
-  .toolbar h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.25rem; font-weight: 700; letter-spacing: -.02em;
-  }
-  .toolbar .count {
-    font-family: 'JetBrains Mono', monospace; font-size: .82rem;
-    color: var(--ink-faint); margin-left: 8px;
-  }
-  .filters { display: flex; gap: 6px; flex-wrap: wrap; }
-  .chip {
-    font-size: .8rem; font-weight: 600; cursor: pointer;
-    padding: 7px 13px; border-radius: 999px;
-    border: 1px solid var(--line); background: #fff; color: var(--ink-soft);
-    transition: all .15s;
-  }
-  .chip:hover { border-color: var(--primary); }
-  .chip.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+    /* ---------- Toolbar ---------- */
+    .toolbar {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+      margin: 28px 0 16px;
+    }
+    .toolbar h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem; font-weight: 700; letter-spacing: -.02em;
+    }
+    .toolbar .count {
+      font-family: 'JetBrains Mono', monospace; font-size: .82rem;
+      color: var(--ink-faint); margin-left: 8px;
+    }
+    .filters { display: flex; gap: 6px; flex-wrap: wrap; }
+    .chip {
+      font-size: .8rem; font-weight: 600; cursor: pointer;
+      padding: 7px 13px; border-radius: 999px;
+      border: 1px solid var(--line); background: #fff; color: var(--ink-soft);
+      transition: all .15s;
+    }
+    .chip:hover { border-color: var(--primary); }
+    .chip.active { background: var(--ink); color: #fff; border-color: var(--ink); }
 
-  /* ---------- Course cards ---------- */
-  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .card {
-    position: relative;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-left: 4px solid var(--status-not);
-    border-radius: var(--radius);
-    padding: 18px 20px 16px;
-    box-shadow: var(--shadow);
-    display: flex; flex-direction: column;
-    animation: rise .3s ease;
-  }
-  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-  .card[data-status="Not Started"] { border-left-color: var(--status-not); }
-  .card[data-status="In Progress"] { border-left-color: var(--status-progress); }
-  .card[data-status="Completed"]   { border-left-color: var(--status-done); }
+    /* ---------- Course cards ---------- */
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .card {
+      position: relative;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--status-not);
+      border-radius: var(--radius);
+      padding: 18px 20px 16px;
+      box-shadow: var(--shadow);
+      display: flex; flex-direction: column;
+      animation: rise .3s ease;
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    .card[data-status="Not Started"] { border-left-color: var(--status-not); }
+    .card[data-status="In Progress"] { border-left-color: var(--status-progress); }
+    .card[data-status="Completed"]   { border-left-color: var(--status-done); }
 
-  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-  .card h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.08rem; font-weight: 600; letter-spacing: -.01em;
-    word-break: break-word;
-  }
-  .badge {
-    flex: none;
-    font-size: .72rem; font-weight: 600;
-    padding: 4px 10px 4px 8px; border-radius: 999px;
-    display: inline-flex; align-items: center; gap: 6px;
-    background: #F1F3F8; color: var(--ink-soft);
-  }
-  .badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--status-not); }
-  .badge[data-status="In Progress"] { background: var(--success-tint); color: #B45309; }
-  .badge[data-status="In Progress"] .dot { background: var(--status-progress); }
-  .badge[data-status="Completed"] { background: #E6F8F1; color: #047857; }
-  .badge[data-status="Completed"] .dot { background: var(--status-done); }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.08rem; font-weight: 600; letter-spacing: -.01em;
+      word-break: break-word;
+    }
+    .badge {
+      flex: none;
+      font-size: .72rem; font-weight: 600;
+      padding: 4px 10px 4px 8px; border-radius: 999px;
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #F1F3F8; color: var(--ink-soft);
+    }
+    .badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--status-not); }
+    .badge[data-status="In Progress"] { background: var(--success-tint); color: #B45309; }
+    .badge[data-status="In Progress"] .dot { background: var(--status-progress); }
+    .badge[data-status="Completed"] { background: #E6F8F1; color: #047857; }
+    .badge[data-status="Completed"] .dot { background: var(--status-done); }
 
-  .card .desc {
-    color: var(--ink-soft); font-size: .9rem; margin: 10px 0 14px;
-    word-break: break-word;
-  }
-  .meta { display: flex; gap: 18px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
-  .meta div { display: flex; flex-direction: column; gap: 2px; }
-  .meta .k { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); font-weight: 600; }
-  .meta .v { font-family: 'JetBrains Mono', monospace; font-size: .82rem; color: var(--ink); }
-  .card-actions {
-    display: flex; gap: 8px; margin-top: 16px;
-    padding-top: 14px; border-top: 1px solid var(--line);
-  }
+    .card .desc {
+      color: var(--ink-soft); font-size: .9rem; margin: 10px 0 14px;
+      word-break: break-word;
+    }
+    .meta { display: flex; gap: 18px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
+    .meta div { display: flex; flex-direction: column; gap: 2px; }
+    .meta .k { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); font-weight: 600; }
+    .meta .v { font-family: 'JetBrains Mono', monospace; font-size: .82rem; color: var(--ink); }
+    .card-actions {
+      display: flex; gap: 8px; margin-top: 16px;
+      padding-top: 14px; border-top: 1px solid var(--line);
+    }
 
-  /* ---------- States ---------- */
-  .state {
-    text-align: center; padding: 56px 20px;
-    color: var(--ink-faint);
-    grid-column: 1 / -1;
-  }
-  .state h3 { font-family: 'Space Grotesk', sans-serif; color: var(--ink); font-size: 1.1rem; margin-bottom: 6px; }
-  .state p { font-size: .92rem; margin-bottom: 18px; }
-  .state.error h3 { color: var(--danger); }
+    /* ---------- States ---------- */
+    .state {
+      text-align: center; padding: 56px 20px;
+      color: var(--ink-faint);
+      grid-column: 1 / -1;
+    }
+    .state h3 { font-family: 'Space Grotesk', sans-serif; color: var(--ink); font-size: 1.1rem; margin-bottom: 6px; }
+    .state p { font-size: .92rem; margin-bottom: 18px; }
+    .state.error h3 { color: var(--danger); }
 
-  .spinner {
-    width: 38px; height: 38px; margin: 0 auto 18px;
-    border: 3px solid var(--primary-tint);
-    border-top-color: var(--primary);
-    border-radius: 50%;
-    animation: spin .8s linear infinite;
-  }
-  .spinner.sm { width: 16px; height: 16px; border-width: 2px; margin: 0; display: inline-block; vertical-align: -3px; }
-  .spinner.on-primary { border-color: rgba(255,255,255,.4); border-top-color: #fff; }
-  @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner {
+      width: 38px; height: 38px; margin: 0 auto 18px;
+      border: 3px solid var(--primary-tint);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    .spinner.sm { width: 16px; height: 16px; border-width: 2px; margin: 0; display: inline-block; vertical-align: -3px; }
+    .spinner.on-primary { border-color: rgba(255,255,255,.4); border-top-color: #fff; }
+    @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ---------- Modal ---------- */
-  .overlay {
-    position: fixed; inset: 0; background: rgba(30,27,46,.5);
-    display: none; align-items: flex-start; justify-content: center;
-    padding: 40px 16px; z-index: 50; overflow-y: auto;
-  }
-  .overlay.open { display: flex; animation: fade .15s ease; }
-  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-  .modal {
-    background: #fff; border-radius: var(--radius);
-    width: min(560px, 100%); box-shadow: var(--shadow-lg);
-    animation: rise .2s ease;
-  }
-  .modal-head {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 18px 22px; border-bottom: 1px solid var(--line);
-  }
-  .modal-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 600; }
-  .modal-head button {
-    background: none; border: none; cursor: pointer; font-size: 1.5rem;
-    color: var(--ink-faint); line-height: 1; padding: 0 4px;
-  }
-  .modal-head button:hover { color: var(--ink); }
-  .modal form { padding: 22px; }
+    /* ---------- Modal ---------- */
+    .overlay {
+      position: fixed; inset: 0; background: rgba(30,27,46,.5);
+      display: none; align-items: flex-start; justify-content: center;
+      padding: 40px 16px; z-index: 50; overflow-y: auto;
+    }
+    .overlay.open { display: flex; animation: fade .15s ease; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    .modal {
+      background: #fff; border-radius: var(--radius);
+      width: min(560px, 100%); box-shadow: var(--shadow-lg);
+      animation: rise .2s ease;
+    }
+    .modal-head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; border-bottom: 1px solid var(--line);
+    }
+    .modal-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 600; }
+    .modal-head button {
+      background: none; border: none; cursor: pointer; font-size: 1.5rem;
+      color: var(--ink-faint); line-height: 1; padding: 0 4px;
+    }
+    .modal-head button:hover { color: var(--ink); }
+    .modal form { padding: 22px; }
 
-  /* ---------- Toasts ---------- */
-  #toasts {
-    position: fixed; bottom: 22px; right: 22px; z-index: 80;
-    display: flex; flex-direction: column; gap: 10px; max-width: 340px;
-  }
-  .toast {
-    display: flex; gap: 10px; align-items: flex-start;
-    background: var(--ink); color: #fff;
-    padding: 13px 15px; border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-lg); font-size: .88rem;
-    border-left: 4px solid var(--primary);
-    animation: toastIn .25s ease;
-  }
-  .toast.success { border-left-color: var(--success); }
-  .toast.error { border-left-color: var(--danger); }
-  .toast strong { display: block; font-weight: 600; margin-bottom: 1px; }
-  @keyframes toastIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: none; } }
-  .toast.out { animation: toastOut .25s ease forwards; }
-  @keyframes toastOut { to { opacity: 0; transform: translateX(20px); } }
+    /* ---------- Toasts ---------- */
+    #toasts {
+      position: fixed; bottom: 22px; right: 22px; z-index: 80;
+      display: flex; flex-direction: column; gap: 10px; max-width: 340px;
+    }
+    .toast {
+      display: flex; gap: 10px; align-items: flex-start;
+      background: var(--ink); color: #fff;
+      padding: 13px 15px; border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-lg); font-size: .88rem;
+      border-left: 4px solid var(--primary);
+      animation: toastIn .25s ease;
+    }
+    .toast.success { border-left-color: var(--success); }
+    .toast.error { border-left-color: var(--danger); }
+    .toast strong { display: block; font-weight: 600; margin-bottom: 1px; }
+    @keyframes toastIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: none; } }
+    .toast.out { animation: toastOut .25s ease forwards; }
+    @keyframes toastOut { to { opacity: 0; transform: translateX(20px); } }
 
-  /* ---------- Responsive ---------- */
-  @media (max-width: 720px) {
-    .grid { grid-template-columns: 1fr; }
-    .cards { grid-template-columns: 1fr; }
-    .brand h1 { font-size: 1.3rem; }
-    .form-actions { flex-direction: column; }
-    .form-actions .btn { width: 100%; justify-content: center; }
-  }
+    /* ---------- Responsive ---------- */
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      .brand h1 { font-size: 1.3rem; }
+      .form-actions { flex-direction: column; }
+      .form-actions .btn { width: 100%; justify-content: center; }
+    }
 
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation: none !important; transition: none !important; }
-  }
-</style>
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -428,162 +428,166 @@
 <div id="toasts"></div>
 
 <script>
-'use strict';
+  'use strict';
 
-const API_BASE = 'http://localhost:8080/api/courses';
+  const API_BASE = 'http://localhost:8080/api/courses';
 
-/* ---------- State ---------- */
-let courses = [];
-let activeFilter = 'all';
+  /* ---------- State ---------- */
+  let courses = [];
+  let activeFilter = 'all';
 
-/* ---------- DOM refs ---------- */
-const cardsEl   = document.getElementById('cards');
-const countEl   = document.getElementById('course-count');
-const addForm   = document.getElementById('add-form');
-const addSubmit = document.getElementById('add-submit');
-const filtersEl = document.getElementById('filters');
+  /* ---------- DOM refs ---------- */
+  const cardsEl   = document.getElementById('cards');
+  const countEl   = document.getElementById('course-count');
+  const addForm   = document.getElementById('add-form');
+  const addSubmit = document.getElementById('add-submit');
+  const filtersEl = document.getElementById('filters');
 
-const overlay    = document.getElementById('edit-overlay');
-const editForm   = document.getElementById('edit-form');
-const editSubmit = document.getElementById('edit-submit');
+  const overlay    = document.getElementById('edit-overlay');
+  const editForm   = document.getElementById('edit-form');
+  const editSubmit = document.getElementById('edit-submit');
 
-/* ---------- Utilities ---------- */
-function escapeHtml(str) {
-  return String(str ?? '').replace(/[&<>"']/g, c => (
-    { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]
-  ));
-}
-
-function formatDate(value, withTime) {
-  if (!value) return '—';
-  const d = new Date(value);
-  if (isNaN(d)) return escapeHtml(value);
-  const opts = withTime
-    ? { year:'numeric', month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }
-    : { year:'numeric', month:'short', day:'numeric' };
-  return d.toLocaleDateString(undefined, opts);
-}
-
-function setButtonLoading(btn, loading, label) {
-  if (loading) {
-    btn.disabled = true;
-    btn.dataset.label = btn.innerHTML;
-    btn.innerHTML = '<span class="spinner sm on-primary"></span> ' + (label || 'Working…');
-  } else {
-    btn.disabled = false;
-    if (btn.dataset.label) btn.innerHTML = btn.dataset.label;
+  /* ---------- Utilities ---------- */
+  function escapeHtml(str) {
+    return String(str ?? '').replace(/[&<>"']/g, c => (
+            { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]
+    ));
   }
-}
 
-/* ---------- Toasts ---------- */
-function toast(message, type, title) {
-  const wrap = document.getElementById('toasts');
-  const el = document.createElement('div');
-  el.className = 'toast ' + (type || '');
-  el.innerHTML = (title ? '<div><strong>' + escapeHtml(title) + '</strong>' + escapeHtml(message) + '</div>'
-                        : '<div>' + escapeHtml(message) + '</div>');
-  wrap.appendChild(el);
-  setTimeout(() => {
-    el.classList.add('out');
-    el.addEventListener('animationend', () => el.remove());
-  }, 4200);
-}
-
-/* ---------- API layer ----------
-   Each call surfaces network and HTTP errors with a friendly message. */
-async function apiRequest(url, options) {
-  let res;
-  try {
-    res = await fetch(url, options);
-  } catch (e) {
-    throw new Error('Could not reach the server. Make sure the API is running at ' + API_BASE + '.');
+  function escapeAttr(str) {
+    return String(str ?? '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
   }
-  if (!res.ok) {
-    let detail = '';
-    try {
-      const body = await res.json();
-      detail = body.message || body.error || '';
-    } catch (_) { /* ignore non-JSON bodies */ }
-    throw new Error(detail || ('Request failed (HTTP ' + res.status + ').'));
+
+  function formatDate(value, withTime) {
+    if (!value) return '—';
+    const d = new Date(value);
+    if (isNaN(d)) return escapeHtml(value);
+    const opts = withTime
+            ? { year:'numeric', month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }
+            : { year:'numeric', month:'short', day:'numeric' };
+    return d.toLocaleDateString(undefined, opts);
   }
-  if (res.status === 204) return null;
-  try { return await res.json(); }
-  catch (_) { return null; }
-}
 
-const api = {
-  list:   ()        => apiRequest(API_BASE),
-  create: (data)    => apiRequest(API_BASE, {
-                         method: 'POST',
-                         headers: { 'Content-Type': 'application/json' },
-                         body: JSON.stringify(data)
-                       }),
-  update: (id, data)=> apiRequest(API_BASE + '/' + encodeURIComponent(id), {
-                         method: 'PUT',
-                         headers: { 'Content-Type': 'application/json' },
-                         body: JSON.stringify(data)
-                       }),
-  remove: (id)      => apiRequest(API_BASE + '/' + encodeURIComponent(id), { method: 'DELETE' })
-};
-
-/* ---------- Validation ---------- */
-function validate(form, fields) {
-  let ok = true;
-  const data = {};
-  form.querySelectorAll('.err-text').forEach(e => e.textContent = '');
-  form.querySelectorAll('.invalid').forEach(e => e.classList.remove('invalid'));
-
-  fields.forEach(name => {
-    const input = form.querySelector('[name="' + name + '"]');
-    const value = (input.value || '').trim();
-    data[name] = value;
-    if (!value) {
-      ok = false;
-      input.classList.add('invalid');
-      const msg = form.querySelector('[data-err="' + name + '"]');
-      if (msg) msg.textContent = labelFor(name) + ' is required.';
+  function setButtonLoading(btn, loading, label) {
+    if (loading) {
+      btn.disabled = true;
+      btn.dataset.label = btn.innerHTML;
+      btn.innerHTML = '<span class="spinner sm on-primary"></span> ' + (label || 'Working…');
+    } else {
+      btn.disabled = false;
+      if (btn.dataset.label) btn.innerHTML = btn.dataset.label;
     }
-  });
-  return ok ? data : null;
-}
+  }
 
-function labelFor(name) {
-  return { name:'Course name', description:'Description',
-           target_date:'Target date', status:'Status' }[name] || name;
-}
+  /* ---------- Toasts ---------- */
+  function toast(message, type, title) {
+    const wrap = document.getElementById('toasts');
+    const el = document.createElement('div');
+    el.className = 'toast ' + (type || '');
+    el.innerHTML = (title ? '<div><strong>' + escapeHtml(title) + '</strong>' + escapeHtml(message) + '</div>'
+            : '<div>' + escapeHtml(message) + '</div>');
+    wrap.appendChild(el);
+    setTimeout(() => {
+      el.classList.add('out');
+      el.addEventListener('animationend', () => el.remove());
+    }, 4200);
+  }
 
-/* ---------- Rendering ---------- */
-function visibleCourses() {
-  if (activeFilter === 'all') return courses;
-  return courses.filter(c => c.status === activeFilter);
-}
+  /* ---------- API layer ----------
+     Each call surfaces network and HTTP errors with a friendly message. */
+  async function apiRequest(url, options) {
+    let res;
+    try {
+      res = await fetch(url, options);
+    } catch (e) {
+      throw new Error('Could not reach the server. Make sure the API is running at ' + API_BASE + '.');
+    }
+    if (!res.ok) {
+      let detail = '';
+      try {
+        const body = await res.json();
+        detail = body.message || body.error || '';
+      } catch (_) { /* ignore non-JSON bodies */ }
+      throw new Error(detail || ('Request failed (HTTP ' + res.status + ').'));
+    }
+    if (res.status === 204) return null;
+    try { return await res.json(); }
+    catch (_) { return null; }
+  }
 
-function render() {
-  countEl.textContent = courses.length
-    ? '(' + visibleCourses().length + (activeFilter === 'all' ? '' : ' of ' + courses.length) + ')'
-    : '';
+  const api = {
+    list:   ()        => apiRequest(API_BASE),
+    create: (data)    => apiRequest(API_BASE, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    }),
+    update: (id, data)=> apiRequest(API_BASE + '/' + encodeURIComponent(id), {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    }),
+    remove: (id)      => apiRequest(API_BASE + '/' + encodeURIComponent(id), { method: 'DELETE' })
+  };
 
-  const list = visibleCourses();
+  /* ---------- Validation ---------- */
+  function validate(form, fields) {
+    let ok = true;
+    const data = {};
+    form.querySelectorAll('.err-text').forEach(e => e.textContent = '');
+    form.querySelectorAll('.invalid').forEach(e => e.classList.remove('invalid'));
 
-  if (!courses.length) {
-    cardsEl.innerHTML = `
+    fields.forEach(name => {
+      const input = form.querySelector('[name="' + name + '"]');
+      const value = (input.value || '').trim();
+      data[name] = value;
+      if (!value) {
+        ok = false;
+        input.classList.add('invalid');
+        const msg = form.querySelector('[data-err="' + name + '"]');
+        if (msg) msg.textContent = labelFor(name) + ' is required.';
+      }
+    });
+    return ok ? data : null;
+  }
+
+  function labelFor(name) {
+    return { name:'Course name', description:'Description',
+      target_date:'Target date', status:'Status' }[name] || name;
+  }
+
+  /* ---------- Rendering ---------- */
+  function visibleCourses() {
+    if (activeFilter === 'all') return courses;
+    return courses.filter(c => c.status === activeFilter);
+  }
+
+  function render() {
+    countEl.textContent = courses.length
+            ? '(' + visibleCourses().length + (activeFilter === 'all' ? '' : ' of ' + courses.length) + ')'
+            : '';
+
+    const list = visibleCourses();
+
+    if (!courses.length) {
+      cardsEl.innerHTML = `
       <div class="state">
         <h3>No courses yet</h3>
         <p>Add your first course using the form above to start tracking your learning.</p>
       </div>`;
-    return;
-  }
+      return;
+    }
 
-  if (!list.length) {
-    cardsEl.innerHTML = `
+    if (!list.length) {
+      cardsEl.innerHTML = `
       <div class="state">
         <h3>Nothing in "${escapeHtml(activeFilter)}"</h3>
         <p>No courses match this filter. Try another status.</p>
       </div>`;
-    return;
-  }
+      return;
+    }
 
-  cardsEl.innerHTML = list.map(c => `
+    cardsEl.innerHTML = list.map(c => `
     <article class="card" data-status="${escapeHtml(c.status)}">
       <div class="card-top">
         <h3>${escapeHtml(c.name)}</h3>
@@ -603,158 +607,151 @@ function render() {
         </div>
       </div>
       <div class="card-actions">
-        <button class="btn btn-edit btn-sm" data-action="edit" data-id="${escapeHtml(c.id)}">Edit</button>
-        <button class="btn btn-danger btn-sm" data-action="delete" data-id="${escapeHtml(c.id)}">Remove</button>
+        <button class="btn btn-success btn-sm" onclick="handleEdit('${escapeAttr(c.id)}')">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="handleDelete('${escapeAttr(c.id)}', this)">Remove</button>
       </div>
     </article>
   `).join('');
-}
+  }
 
-function renderLoading() {
-  cardsEl.innerHTML = `
+  function renderLoading() {
+    cardsEl.innerHTML = `
     <div class="state">
       <div class="spinner"></div>
       <p>Loading your courses…</p>
     </div>`;
-}
+  }
 
-function renderError(message) {
-  cardsEl.innerHTML = `
+  function renderError(message) {
+    cardsEl.innerHTML = `
     <div class="state error">
       <h3>Couldn't load courses</h3>
       <p>${escapeHtml(message)}</p>
       <button class="btn btn-primary" id="retry">Try again</button>
     </div>`;
-  document.getElementById('retry').addEventListener('click', loadCourses);
-}
-
-/* ---------- Operations ---------- */
-async function loadCourses() {
-  renderLoading();
-  try {
-    const data = await api.list();
-    courses = Array.isArray(data) ? data : (data && Array.isArray(data.courses) ? data.courses : []);
-    render();
-  } catch (e) {
-    renderError(e.message);
-    toast(e.message, 'error', 'Load failed');
+    document.getElementById('retry').addEventListener('click', loadCourses);
   }
-}
 
-addForm.addEventListener('submit', async (ev) => {
-  ev.preventDefault();
-  const data = validate(addForm, ['name', 'description', 'target_date', 'status']);
-  if (!data) return;
-
-  setButtonLoading(addSubmit, true, 'Adding…');
-  try {
-    const created = await api.create(data);
-    // Use the server's record if returned, else fall back to submitted data.
-    if (created && created.id != null) courses.push(created);
-    else await refreshSilently();
-    render();
-    addForm.reset();
-    toast('"' + data.name + '" was added.', 'success', 'Course created');
-  } catch (e) {
-    toast(e.message, 'error', 'Create failed');
-  } finally {
-    setButtonLoading(addSubmit, false);
-  }
-});
-
-async function refreshSilently() {
-  try {
-    const data = await api.list();
-    courses = Array.isArray(data) ? data : (data && Array.isArray(data.courses) ? data.courses : []);
-  } catch (_) { /* keep existing state */ }
-}
-
-/* Card button delegation */
-cardsEl.addEventListener('click', (ev) => {
-  const btn = ev.target.closest('button[data-action]');
-  if (!btn) return;
-  const id = btn.dataset.id;
-  if (btn.dataset.action === 'edit') openEdit(id);
-  if (btn.dataset.action === 'delete') doDelete(id, btn);
-});
-
-async function doDelete(id, btn) {
-  const course = courses.find(c => String(c.id) === String(id));
-  const name = course ? course.name : 'this course';
-  if (!confirm('Remove "' + name + '"? This cannot be undone.')) return;
-
-  setButtonLoading(btn, true, 'Removing…');
-  try {
-    await api.remove(id);
-    courses = courses.filter(c => String(c.id) !== String(id));
-    render();
-    toast('"' + name + '" was removed.', 'success', 'Course deleted');
-  } catch (e) {
-    setButtonLoading(btn, false);
-    toast(e.message, 'error', 'Delete failed');
-  }
-}
-
-/* ---------- Edit modal ---------- */
-function openEdit(id) {
-  const course = courses.find(c => String(c.id) === String(id));
-  if (!course) return;
-  editForm.querySelectorAll('.err-text').forEach(e => e.textContent = '');
-  editForm.querySelectorAll('.invalid').forEach(e => e.classList.remove('invalid'));
-
-  document.getElementById('edit-id').value = course.id;
-  document.getElementById('edit-name').value = course.name || '';
-  document.getElementById('edit-description').value = course.description || '';
-  document.getElementById('edit-target_date').value = (course.target_date || '').slice(0, 10);
-  document.getElementById('edit-status').value = course.status || 'Not Started';
-
-  overlay.classList.add('open');
-  document.getElementById('edit-name').focus();
-}
-
-function closeEdit() { overlay.classList.remove('open'); }
-
-document.getElementById('edit-close').addEventListener('click', closeEdit);
-document.getElementById('edit-cancel').addEventListener('click', closeEdit);
-overlay.addEventListener('click', (ev) => { if (ev.target === overlay) closeEdit(); });
-document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && overlay.classList.contains('open')) closeEdit(); });
-
-editForm.addEventListener('submit', async (ev) => {
-  ev.preventDefault();
-  const data = validate(editForm, ['name', 'description', 'target_date', 'status']);
-  if (!data) return;
-  const id = document.getElementById('edit-id').value;
-
-  setButtonLoading(editSubmit, true, 'Saving…');
-  try {
-    const updated = await api.update(id, data);
-    const idx = courses.findIndex(c => String(c.id) === String(id));
-    if (idx > -1) {
-      courses[idx] = (updated && updated.id != null)
-        ? updated
-        : Object.assign({}, courses[idx], data);
+  /* ---------- Operations ---------- */
+  async function loadCourses() {
+    renderLoading();
+    try {
+      const data = await api.list();
+      courses = Array.isArray(data) ? data : (data && Array.isArray(data.courses) ? data.courses : []);
+      render();
+    } catch (e) {
+      renderError(e.message);
+      toast(e.message, 'error', 'Load failed');
     }
-    render();
-    closeEdit();
-    toast('"' + data.name + '" was updated.', 'success', 'Changes saved');
-  } catch (e) {
-    toast(e.message, 'error', 'Update failed');
-  } finally {
-    setButtonLoading(editSubmit, false);
   }
-});
 
-/* ---------- Filters ---------- */
-filtersEl.addEventListener('click', (ev) => {
-  const chip = ev.target.closest('.chip');
-  if (!chip) return;
-  activeFilter = chip.dataset.filter;
-  filtersEl.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c === chip));
-  render();
-});
+  addForm.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const data = validate(addForm, ['name', 'description', 'target_date', 'status']);
+    if (!data) return;
 
-/* ---------- Boot ---------- */
-loadCourses();
+    setButtonLoading(addSubmit, true, 'Adding…');
+    try {
+      const created = await api.create(data);
+      // Use the server's record if returned, else fall back to submitted data.
+      if (created && created.id != null) courses.push(created);
+      else await refreshSilently();
+      render();
+      addForm.reset();
+      toast('"' + data.name + '" was added.', 'success', 'Course created');
+    } catch (e) {
+      toast(e.message, 'error', 'Create failed');
+    } finally {
+      setButtonLoading(addSubmit, false);
+    }
+  });
+
+  async function refreshSilently() {
+    try {
+      const data = await api.list();
+      courses = Array.isArray(data) ? data : (data && Array.isArray(data.courses) ? data.courses : []);
+    } catch (_) { /* keep existing state */ }
+  }
+
+  /* Delete a course (wired via the Remove button's onclick="handleDelete(...)") */
+  async function handleDelete(id, btn) {
+    const course = courses.find(c => String(c.id) === String(id));
+    const name = course ? course.name : 'this course';
+    if (!confirm('Remove "' + name + '"? This cannot be undone.')) return;
+
+    setButtonLoading(btn, true, 'Removing…');
+    try {
+      await api.remove(id);
+      courses = courses.filter(c => String(c.id) !== String(id));
+      render();
+      toast('"' + name + '" was removed.', 'success', 'Course deleted');
+    } catch (e) {
+      setButtonLoading(btn, false);
+      toast(e.message, 'error', 'Delete failed');
+    }
+  }
+
+  /* ---------- Edit modal ---------- */
+  /* Open the edit modal (wired via the Edit button's onclick="handleEdit(...)") */
+  function handleEdit(id) {
+    const course = courses.find(c => String(c.id) === String(id));
+    if (!course) return;
+    editForm.querySelectorAll('.err-text').forEach(e => e.textContent = '');
+    editForm.querySelectorAll('.invalid').forEach(e => e.classList.remove('invalid'));
+
+    document.getElementById('edit-id').value = course.id;
+    document.getElementById('edit-name').value = course.name || '';
+    document.getElementById('edit-description').value = course.description || '';
+    document.getElementById('edit-target_date').value = (course.target_date || '').slice(0, 10);
+    document.getElementById('edit-status').value = course.status || 'Not Started';
+
+    overlay.classList.add('open');
+    document.getElementById('edit-name').focus();
+  }
+
+  function closeEdit() { overlay.classList.remove('open'); }
+
+  document.getElementById('edit-close').addEventListener('click', closeEdit);
+  document.getElementById('edit-cancel').addEventListener('click', closeEdit);
+  overlay.addEventListener('click', (ev) => { if (ev.target === overlay) closeEdit(); });
+  document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && overlay.classList.contains('open')) closeEdit(); });
+
+  editForm.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const data = validate(editForm, ['name', 'description', 'target_date', 'status']);
+    if (!data) return;
+    const id = document.getElementById('edit-id').value;
+
+    setButtonLoading(editSubmit, true, 'Saving…');
+    try {
+      const updated = await api.update(id, data);
+      const idx = courses.findIndex(c => String(c.id) === String(id));
+      if (idx > -1) {
+        courses[idx] = (updated && updated.id != null)
+                ? updated
+                : Object.assign({}, courses[idx], data);
+      }
+      render();
+      closeEdit();
+      toast('"' + data.name + '" was updated.', 'success', 'Changes saved');
+    } catch (e) {
+      toast(e.message, 'error', 'Update failed');
+    } finally {
+      setButtonLoading(editSubmit, false);
+    }
+  });
+
+  /* ---------- Filters ---------- */
+  filtersEl.addEventListener('click', (ev) => {
+    const chip = ev.target.closest('.chip');
+    if (!chip) return;
+    activeFilter = chip.dataset.filter;
+    filtersEl.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c === chip));
+    render();
+  });
+
+  /* ---------- Boot ---------- */
+  loadCourses();
 </script>
 </body>
 </html>
